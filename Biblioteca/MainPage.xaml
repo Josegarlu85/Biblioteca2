@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Biblioteca.MainPage">
+    <Grid>
+
+        <Image Source="biblioteca.jpg" Aspect="AspectFill" Opacity="0.7" IsEnabled="False"/>
+
+        <ScrollView HorizontalOptions="Center" VerticalOptions="Center">
+            <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25"
+			HorizontalOptions="Center"
+			VerticalOptions="Center">
+
+                <Label
+                    Text="Bienvenido a esta humilde"
+                    FontFamily="Astronomy"
+                    HorizontalOptions="Center"
+                    FontSize="50"
+                    TextColor="Beige"/>
+
+                <Label
+                     Text="biblioteca"
+                     FontFamily="Astronomy"
+                     HorizontalOptions="Center"
+                     FontSize="50"
+                     TextColor="Beige"/>
+
+
+
+            </VerticalStackLayout>
+        </ScrollView>
+    </Grid>
+</ContentPage>
