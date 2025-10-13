@@ -2,18 +2,50 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Biblioteca.ConsultasLibros"
-             Title="ConsultasLibros">
+             Title="Consulta de Libros">
 
     <Grid>
+        <Image Source="buscando.jpg" Aspect="AspectFill" Opacity="0.9" IsEnabled="False"/>
 
-        <Image Source="buscando.jpg" Aspect="AspectFill" Opacity="0.7" IsEnabled="False"/>
+        <ScrollView>
+            <VerticalStackLayout Padding="30" Spacing="20">
 
-        <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+                <Label Text="Consulta de Libros" FontSize="36" HorizontalOptions="Center" TextColor="Beige"/>
 
+                <Label Text="Tipo de consulta:" FontSize="20" TextColor="Beige"/>
+                <HorizontalStackLayout>
+                    <RadioButton x:Name="autorRadio" TextColor="Beige" Content="Autor" IsChecked="True" CheckedChanged="OnConsulta" />
+                    <RadioButton x:Name="editorialRadio" TextColor="Beige" Content="Editorial" CheckedChanged="OnConsulta" />
+                </HorizontalStackLayout>
+
+                <Label Text="Autor / Editorial:" FontSize="18" TextColor="Beige"/>
+                <ListView x:Name="autoresView"
+          ItemSelected="OnAutorEditorialSeleccionado"
+          BackgroundColor="Transparent"
+          HeightRequest="100">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <TextCell Text="{Binding}" TextColor="White"/>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+
+                <ListView x:Name="titulosView"
+          ItemTapped="OnTituloDobleClick"
+          BackgroundColor="Transparent"
+          HeightRequest="100">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <TextCell Text="{Binding}" TextColor="White"/>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+
+
+                <Label Text="Portada:" FontSize="18" TextColor="Beige"/>
+                <Image x:Name="portadaImage" HeightRequest="200" Aspect="AspectFit" BackgroundColor="BurlyWood"/>
+
+            </VerticalStackLayout>
+        </ScrollView>
     </Grid>
 </ContentPage>
