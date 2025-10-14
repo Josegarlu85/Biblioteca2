@@ -6,7 +6,7 @@ public partial class MainPage : ContentPage
     {
         InitializeComponent(); 
     }
-
+    /*
     private async void altaLibros(object sender, EventArgs e)
     {
         await Shell.Current.GoToAsync("AltasLibros");
@@ -16,4 +16,5 @@ public partial class MainPage : ContentPage
     {
         await Shell.Current.GoToAsync("ConsultasLibros");
     }
+    */
 }

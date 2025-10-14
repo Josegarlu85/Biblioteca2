@@ -68,7 +68,7 @@ public partial class ConsultasLibros : ContentPage
         }
         else
         {
-            valores.Add("Tipo de consulta no reconocido.");
+            
         }
 
         // Asignamos los valores a la vista correspondiente y limpiamos las otras vistas
