@@ -10,14 +10,14 @@
         <ScrollView>
             <VerticalStackLayout Padding="30" Spacing="20">
 
-                <Label Text="Alta de Libros" FontSize="36" HorizontalOptions="Center" TextColor="Beige"/>
+                <Label Text="Alta de Libros" FontSize="36" HorizontalOptions="Center" TextColor="DarkBlue"/>
 
                 
                 <Entry x:Name="tituloEntry" Placeholder="Título" BackgroundColor="White"/>
                 <Entry x:Name="autorEntry" Placeholder="Autor" BackgroundColor="White"/>
                 <Entry x:Name="editorialEntry" Placeholder="Editorial" BackgroundColor="White"/>
 
-                <Label Text="Portada del libro:" FontSize="20" TextColor="Beige"/>
+                <Label Text="Portada del libro:" FontSize="20" TextColor="DarkBlue"/>
                 <Image x:Name="portadaImage" HeightRequest="200" Aspect="AspectFit" BackgroundColor="BurlyWood"/>
 
                 <HorizontalStackLayout Spacing="15" HorizontalOptions="Center">

@@ -18,14 +18,14 @@
                     FontFamily="Astronomy"
                     HorizontalOptions="Center"
                     FontSize="50"
-                    TextColor="Beige"/>
+                    TextColor="DarkBlue"/>
 
                 <Label
                      Text="biblioteca"
                      FontFamily="Astronomy"
                      HorizontalOptions="Center"
                      FontSize="50"
-                     TextColor="Beige"/>
+                     TextColor="DarkBlue"/>
 
 
 
