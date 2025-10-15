@@ -4,7 +4,7 @@
              x:Class="Biblioteca.MainPage">
     <Grid>
 
-        <Image Source="biblioteca.jpg" Aspect="AspectFill" Opacity="0.7" IsEnabled="False"/>
+        <Image Source="biblioteca.jpg" Aspect="AspectFill" Opacity="1" IsEnabled="False"/>
 
         <ScrollView HorizontalOptions="Center" VerticalOptions="Center">
             <VerticalStackLayout
