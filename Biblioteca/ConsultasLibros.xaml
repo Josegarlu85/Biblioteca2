@@ -37,6 +37,8 @@
                             </ListView.ItemTemplate>
                         </ListView>
 
+                        <Label Text="Titulos:" FontSize="18" TextColor="Beige"/>
+
                         <ListView x:Name="titulosView"
                   ItemTapped="OnTituloDobleClick"
                   BackgroundColor="Transparent"
